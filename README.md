@@ -17,6 +17,8 @@ Will follow soon.
 
 ### Additional for OXID 6.2++
 
+**RECOMMENDATION:** :information_source: If you are using OXID 6.2++ better use [Google-Analytics 4 für OXID eShop](https://github.com/d3datadevelopment/GoogleAnalytics4).
+
 Will follow soon.
 
 ## User Guide
