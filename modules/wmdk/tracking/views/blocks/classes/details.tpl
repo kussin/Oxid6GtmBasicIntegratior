@@ -1,0 +1,1 @@
+<!-- WMDK::TRACKING['details.tpl'] -->
