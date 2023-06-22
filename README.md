@@ -13,7 +13,10 @@ More details of the integration can be found in our Blog [Google Tag Manager x S
 
 ## Installation
 
-Will follow soon.
+1. Upload the contents of the repository to the OXID 6 directory [`source`](https://github.com/OXID-eSales/oxideshop_ce/tree/b-6.1.x/source) of your OXID eShop installation.
+2. Activate the module in the OXID eShop backend under **Extensions > Modules > KUSSIN | GTM Basic Integrator for OXID eShop 6.1.x > Activate**.
+3. Configure the module in the OXID eShop backend under **Extensions > Modules > KUSSIN | GTM Basic Integrator for OXID eShop 6.1.x > Activate > Settings**.
+4. Clear the OXID eShop cache under `/path/to/oxid/source/tmp/*`.
 
 ### Additional for OXID 6.2++
 
