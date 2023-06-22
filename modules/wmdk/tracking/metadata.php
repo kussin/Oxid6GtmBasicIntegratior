@@ -2,7 +2,7 @@
 /**
  * Metadata version
  */
-$sMetadataVersion = '1.1';
+$sMetadataVersion = '2.0';
  
 /**
  * Module information
@@ -15,7 +15,7 @@ $aModule = array(
         'en' => 'Adds <a href="https://www.kussin.de/marketing/google-tag-manager-x-shopify-e-commerce-datalayer-einrichten/" target="_blank">gtm code incl. data layer</a> to OXID eSales.',
     ),
     'thumbnail'    => 'module.png',
-    'version'      => '0.0.1',
+    'version'      => '0.1.0',
     'author'       => 'Daniel Kussin',
     'url'          => 'https://www.kussin.de',
     'email'        => 'daniel.kussin@kussin.de',

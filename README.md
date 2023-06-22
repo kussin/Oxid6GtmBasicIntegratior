@@ -11,18 +11,29 @@ More details of the integration can be found in our Blog [Google Tag Manager x S
 1. OXID eShop Version CE/PE/EE v6.1.x or newer
 2. PHP 7.1 or newer
 
-## Installation
+## Installation with [Composer](https://docs.oxid-esales.com/eshop/de/6.2/installation/neu-installation/installation-vorbereiten.html#schritt-shopdateien-bereitstellen)
 
-1. Upload the contents of the repository to the OXID 6 directory [`source`](https://github.com/OXID-eSales/oxideshop_ce/tree/b-6.1.x/source) of your OXID eShop installation.
-2. Activate the module in the OXID eShop backend under **Extensions > Modules > KUSSIN | GTM Basic Integrator for OXID eShop 6.1.x > Activate**.
-3. Configure the module in the OXID eShop backend under **Extensions > Modules > KUSSIN | GTM Basic Integrator for OXID eShop 6.1.x > Activate > Settings**.
-4. Clear the OXID eShop cache under `/path/to/oxid/source/tmp/*`.
+1. Goto your OXID eShop root directory.
+2. Check you PHP version with `php -v` and compare it to your OXID PHP version (see **Service > Systeminfo**), it needs to match.
+3. Add the Repository https://github.com/kussin/Oxid6GtmBasicIntegratior.git to your `composer.json` file by 
+   running `composer config repositories.kussin-oxid6-gtm-basic-integrator vcs https://github.com/kussin/Oxid6GtmBasicIntegratior.git`.
+4. Run the following commands to install the module:
+    ```bash
+    composer clearcache
+    composer require kussin/oxid6-gtm-basic-integrator --no-update
+    composer update --no-interaction
+    ```
+5. Clear the OXID cache `rm -rf source/tmp/*`.
 
 ### Additional for OXID 6.2++
 
 **RECOMMENDATION:** :information_source: If you are using OXID 6.2++ better use [Google-Analytics 4 für OXID eShop](https://github.com/d3datadevelopment/GoogleAnalytics4).
 
-Will follow soon.
+6. Run the following commands to finalize the installation:
+    ```bash
+    php vendor/bin/oe-console oe:module:install-configuration source/modules/kussin/oxid6-gtm-basic-integrator/
+    php vendor/bin/oe-console oe:module:apply-configuration
+    ```
 
 ## User Guide
 
