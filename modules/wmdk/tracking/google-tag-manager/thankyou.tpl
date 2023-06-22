@@ -18,7 +18,7 @@
                     [{foreach from=$aOrderdArticles item=oOrderArticle name=OrderArticles}]
                     {
                         item_id: "[{$oOrderArticle->oxorderarticles__oxartnum->value}]",
-                        item_name: "[{$oOrderArticle->oxorderarticles__oxtitle->value}]",
+                        item_name: "[{$oOrderArticle->oxorderarticles__oxtitle->value|replace:'"':''}]",
                         currency: "[{$sOrderCurrency}]",
                         price: [{$oOrderArticle->oxorderarticles__oxnetprice->value}],
                         quantity: [{$oOrderArticle->oxorderarticles__oxamount->value}]
