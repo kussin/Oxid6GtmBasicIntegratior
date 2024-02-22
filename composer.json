@@ -1,6 +1,6 @@
 {
     "name":        "wmdk/tracking",
-    "version":     "0.1.0.2",
+    "version":     "0.1.0.3",
     "description": "KUSSIN | GTM Basic Integrator for OXID eShop 6.1.x",
     "type":        "oxideshop-module",
     "keywords":    [
